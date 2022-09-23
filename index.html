@@ -12,15 +12,18 @@
 <body>
     <div class="cal__container container-fluid align-items-center col-lg-6 col-8">
 
-        <div id="cal__display" class="cal__display d-flex justify-content-end">0</div>
+        <div id="cal__display" class="cal__display d-flex justify-content-end">
+            <div id="previous__display" class="previous__display container-fluid d-flex justify-content-end"></div>
+            <div id="current__display" class="current__display container-fluid d-flex justify-content-end"></div>
+        </div>
 
         <div id="cal__btn" class="cal__button">
             <div class="cal__op">
                 <div class="row">
-                    <button id="add-btn" class="key-op col-3" >+</button>
-                    <button id="sub-btn" class="key-op col-3">-</button>
-                    <button id="mul-btn" class="key-op col-3">×</button>
-                    <button id="div-btn" class="key-op col-3">÷</button>
+                    <button id="add-btn" class="operator col-3" >+</button>
+                    <button id="sub-btn" class="operator col-3">-</button>
+                    <button id="mul-btn" class="operator col-3">*</button>
+                    <button id="div-btn" class="operator col-3">/</button>
                 </div>
                 
             </div>
@@ -47,16 +50,20 @@
 
                     <div class="row">
                         <button class="number col-4">0</button>
-                        <button id="dot-btn" class="col-4">.</button>
-                        <button id="clear-btn" class="col-4">AC</button>
+                        <button class="number col-4">.</button>
+                        <button id="clear-btn" class="clear-btn col-4">AC</button>
                     </div>
                     <div class="row">
 
                     </div>
                 </div>
 
-                <div class="col-3 equal-btn">
-                    <button id="equal-btn" class="equal-btn">=</button>
+                <div class="col-3 btn">
+                   
+                        <button id="equal-btn" class="equal-btn equal">=</button>
+                        <button id="delete-btn" class="delete-btn delete">DEL</button>
+                 
+                    
                 </div>
             </div>
         </div>
