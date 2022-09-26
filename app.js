@@ -70,7 +70,7 @@ class Calculator{
             intDisplay = ''
         } 
         else {
-            intDisplay = intNum.toLocaleString('en', { maximumFractionDigits: 0 })
+            intDisplay = intNum.toLocaleString('de-DE')
         }
         
 
